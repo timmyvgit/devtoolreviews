@@ -63,15 +63,3 @@ a {
 color: black;
 margin: 0px;
 }
-.listings2 a {
-color: black;
-margin: 0px;
-}
-.row {
-  display: flex;
-  color: black;
-  margin: 0px;
-}
-.listing, .listing2 {
-  flex: 50%;
-}
