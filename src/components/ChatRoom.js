@@ -7,8 +7,7 @@ function ChatRoom() {
   const [user] = useAuthState(auth)
   return (
     <div>
-
-    /* <SignIn /> */
+    <SignIn /> 
     <>
       {user ? <Chat /> : <SignIn />}
     </>

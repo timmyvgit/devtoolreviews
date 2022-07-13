@@ -2,7 +2,7 @@
 import Navbar from './components/Navbar'
 import Reviews from "./pages/Reviews"
 import ChatPage from "./pages/ChatPage"
-import Forum from "./pages/Forum"
+import ForumPage from "./pages/ForumPage"
 import Career from "./pages/Career"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/chat" element={<ChatPage />} />
-          <Route path="/forum" element={<Forum />} />
+          <Route path="/forum" element={<ForumPage />} />
           <Route path="/career" element={<Career />} />
           <Route path="/about" element={<About />} />
         </Routes>
