@@ -1,13 +1,12 @@
-import Navbar from './components/Navbar'
-// import Login from "./components/Login"
 
+import Navbar from './components/Navbar'
 import Reviews from "./pages/Reviews"
-import Chat from "./pages/Chat"
+import ChatPage from "./pages/ChatPage"
 import Forum from "./pages/Forum"
 import Career from "./pages/Career"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
-import './index.css';
+import "./App.css"
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/chat" element={<ChatPage />} />
           <Route path="/forum" element={<Forum />} />
           <Route path="/career" element={<Career />} />
           <Route path="/about" element={<About />} />

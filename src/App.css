@@ -2,30 +2,31 @@
 
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
   padding: 0px;
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: sofia-pro, sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: black;
-  /* display: flex; */
   justify-content: left;
+  height: 100vh;
 }
 .container {
-  margin-left: 100px;
+  margin: 0 300px;
 }
 .navbar {
   background-color: darkslategrey;
+  /* background-image: linear-gradient(black, white); */
   color: white;
   font-size: 20px;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
   height: 10vh;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  border-width: 2px;
+  border-width: 2px; */
 }
 .title {
   font-size: 40px;
@@ -44,6 +45,7 @@ li {
   width: 100px;
   text-decoration: none;
   list-style: none;
+  font-size: 20px;
 }
 h1 {
   align-content: center;
@@ -51,7 +53,7 @@ h1 {
 
 }
 p {
-  margin: 25px 200px;
+  margin:  20px 0;
   font-size: 20px;
 }
 a {

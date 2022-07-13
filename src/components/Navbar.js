@@ -9,7 +9,7 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/reviews">reviews</CustomLink>
         <CustomLink to="/chat">chat</CustomLink>
-		    <CustomLink to="/forum">forum</CustomLink>
+        <CustomLink to="/forum">forum</CustomLink>
         <CustomLink to="/career">career</CustomLink>
         <CustomLink to="/about">about</CustomLink>
 
