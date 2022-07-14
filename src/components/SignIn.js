@@ -1,11 +1,11 @@
-import firebase from '/firebase'
-import { auth } from '../firebase.js'
-import { Button } from '@mui/material'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import {auth} from './firebase.js'
+import {Button} from '@mui/material'
 
 function SignIn() {
   function signInWithGoogle() {
-    const provider = new firebase.auth.GoogleAuthProvider()
-    auth.signInWithPopup(provider)
+    const provider = new GoogleAuthProvider()
+    signInWithPopup(auth, provider)
   }
   return (
     <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', alignItems: 'center' }}>

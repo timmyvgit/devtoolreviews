@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef} from 'react'
-import { db, auth} from '../firebase'
+import { db, auth} from './firebase'
 import SendMessage from './SendMessage'
 import SignOut from './SignOut'
 

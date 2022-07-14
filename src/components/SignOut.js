@@ -1,5 +1,6 @@
-import { auth } from '../firebase.js'
+import { auth } from './firebase.js'
 import { Button } from '@mui/material'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 function SignOut() {
     return (
