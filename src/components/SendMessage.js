@@ -1,6 +1,6 @@
 import { db, auth } from './firebase'
 import {useState} from 'react'
-// import firebase from './firebase'
+import { initializeApp } from 'firebase/app'
 import { Input, Button } from '@mui/material'
 
 function SendMessage({ scroll }) {
