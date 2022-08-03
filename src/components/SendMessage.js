@@ -2,6 +2,8 @@ import { db, auth } from './firebase'
 import {useState} from 'react'
 import { initializeApp } from 'firebase/app'
 import { Input, Button } from '@mui/material'
+import { addDoc, setDoc, collection } from "firebase/firestore"; 
+
 
 function SendMessage({ scroll }) {
     const [msg, setMsg] = useState('')
@@ -9,13 +11,12 @@ function SendMessage({ scroll }) {
     async function sendMessage(e) {
         e.preventDefault()
         const { uid, photoURL } = auth.currentUser
-
-        await db.collection('messages').add({
+        await addDoc(collection(db, "messages" ), {
             text: msg,
             photoURL,
             uid,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp()
-        })
+          });
+        
         setMsg('')
         scroll.current.scrollIntoView({ behavior: 'smooth' })
     }
