@@ -19,7 +19,7 @@ body {
   background-color: darkslategrey;
   /* background-image: linear-gradient(black, white); */
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
@@ -45,7 +45,7 @@ li {
   width: 100px;
   text-decoration: none;
   list-style: none;
-  font-size: 20px;
+  font-size: 24px;
 }
 h1 {
   align-content: center;
@@ -54,7 +54,7 @@ h1 {
 }
 p {
   margin:  20px 0;
-  font-size: 20px;
+  font-size: 24px;
 }
 a {
   text-decoration: none;

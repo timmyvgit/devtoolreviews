@@ -24,15 +24,15 @@ function Chat() {
             console.log (q)
         }
         loadData()
-    }, [])
+    }, [messages])
+    console.log (messages)
     return (
         <div>
-<SignOut />
             <div className="msgs">
                 {messages.map(({ text, uid, photoURL }) => (
                     <div>
                         <div className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
-                            <img src={photoURL} alt="" /> 
+                            {/* <img src={photoURL} alt="" />  */}
                             <p>{text}</p>
                         </div>
                     </div>
@@ -40,6 +40,7 @@ function Chat() {
             </div>
             <SendMessage scroll={scroll} />
             <div ref={scroll}></div>
+<SignOut />
         </div>
     )
 }
