@@ -1,8 +1,8 @@
+import PostRoom from '../components/PostRoom'
+
 export default function ForumPage() {
-    return <div>
-      <h1>Forum</h1>
-      <div>
-        <h2>Please come back later, under construction</h2>
-      </div>
-      </div>
-}
+  return <div>
+    {/* <h2>Under Construction</h2> */}
+        <PostRoom /> 
+        </div>
+  }

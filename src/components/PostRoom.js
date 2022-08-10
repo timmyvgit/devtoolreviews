@@ -1,16 +1,19 @@
-import Chat from './Chat'
+import Post from './Post'
 import SignIn from './SignIn'
 import { auth } from './firebase.js'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
-function ChatRoom() {
+function PostRoom() {
   const [user] = useAuthState(auth)
   return (
     <>
-      {user ? <Chat /> : <SignIn />}
-      
+    <div>
+    <br />
+    <h2>Under Construction</h2>
+    </div>
+      {/* {user ? <Post /> : <SignIn />} */}
     </>
   );
 }
 
-export default ChatRoom;
+export default PostRoom;

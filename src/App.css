@@ -50,7 +50,37 @@ li {
 h1 {
   align-content: center;
   margin: 50px 0px;
-
+}
+.msgs {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.msg {
+  display: flex;
+  padding: 0 10px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px darkslategrey;
+  align-items: center;
+}
+.sendMsg {
+  position: fixed;
+  display: flex;
+  width: 75%;
+  bottom: 0;
+  z-index: 1;
+  border-top: 1px solid lightgray;
+  margin-left: -5px;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+img {
+  border-radius: 5px;
+  height: 40px;
+  /* margin-top: -20px; */
+  border: 1px solid darkslategrey;
 }
 p {
   margin:  20px 0;

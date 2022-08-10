@@ -13,7 +13,7 @@ function Chat() {
     useEffect(() => {
         async function loadData(){
             const messageRef = collection(db, 'messages')
-            const q = query(messageRef, limit(50));
+            const q = query(messageRef, limit(10));
             const querySnapshot = await getDocs(q);
             console.log (querySnapshot)
             setMessages (querySnapshot.docs.map((doc)=>doc.data()))
@@ -29,10 +29,15 @@ function Chat() {
     return (
         <div>
             <div className="msgs">
-                {messages.map(({ text, uid, photoURL }) => (
+                {messages
+                .sort((a,b)=>{
+                return (a.createdAt) - (b.createdAt)
+                }
+                )
+                .map(({ text, uid, photoURL }) => (
                     <div>
                         <div className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
-                            {/* <img src={photoURL} alt="" />  */}
+                            <img src={photoURL} alt="" /> 
                             <p>{text}</p>
                         </div>
                     </div>
@@ -40,7 +45,7 @@ function Chat() {
             </div>
             <SendMessage scroll={scroll} />
             <div ref={scroll}></div>
-<SignOut />
+{/* <SignOut /> */}
         </div>
     )
 }
