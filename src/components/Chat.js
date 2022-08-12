@@ -45,7 +45,7 @@ function Chat() {
             </div>
             <SendMessage scroll={scroll} />
             <div ref={scroll}></div>
-{/* <SignOut /> */}
+<SignOut />
         </div>
     )
 }
